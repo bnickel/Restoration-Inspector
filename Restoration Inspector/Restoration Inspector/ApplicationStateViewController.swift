@@ -7,23 +7,21 @@
 //
 
 import Cocoa
+import KeyedArchiveInspector
 
-class ViewController: NSViewController {
+class ApplicationStateViewController: NSViewController {
 
     @IBOutlet var textView: NSTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override var representedObject: AnyObject? {
+    
+    weak var applicationState:ApplicationState? {
         didSet {
-        // Update the view, if already loaded.
+            textView.string = applicationState?.description ?? ""
+            textView.font = NSFont(name: "Menlo", size: 12)
         }
     }
-
-
 }
 

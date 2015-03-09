@@ -50,55 +50,69 @@ func logApplicationState(path:String) {
     var error:NSError?
     
     if let state = ApplicationState(contentsOfFile: path, error: &error) {
-    
-        println("Bundle version: \(state.bundleVersion)")
-        println("System version: \(state.systemVersion)")
-        println("UI Idiom:       \(state.userInterfaceIdiom)")
-        println()
-        
-        for identifier in state.restorationIdentifiers {
-            
-            println("-----------------------")
-            println()
-            
-            println("Object:            \(identifier)")
-            println("Restoration class: " + (state.restorationClassMap[identifier] ?? "nil"))
-            println()
-            println("Encoded state:")
-            println()
-            
-            if let archive = state.restoredObject(identifier, error: &error) {
-                println(archive)
-                
-                if let views = archive["kViewRestorationDataKey"]?.beautified.children where views.count > 0 {
-                    
-                    println()
-                    println("Restorable views:")
-                    println()
-                    
-                    for view in views {
-                        
-                        println(view.key)
-                        
-                        if  let data = view.value as? NSData,
-                            let archive = KeyedArchive(data: data, error: &error) {
-                                
-                                println(archive.description.indented(1))
-                                
-                        } else if let error = error {
-                            println("Could not read child archive: \(error)")
-                        }
-                    }
-                    
-                }
-                
-            } else if let error = error {
-                println("Could not read archive: \(error)")
-            }
-            println()
-        }
-        
+        logApplicationState(state)
     } else if let error = error {
         println("Could not read archive: \(error)")
+    }
+}
+
+func logApplicationState(state:ApplicationState, println:String -> Void = println) {
+    
+    println("Bundle version: \(state.bundleVersion)")
+    println("System version: \(state.systemVersion)")
+    println("UI Idiom:       \(state.userInterfaceIdiom)")
+    println("")
+    
+    for identifier in state.restorationIdentifiers {
+        
+        println("-----------------------")
+        println("")
+        
+        println("Object:            \(identifier)")
+        println("Restoration class: " + (state.restorationClassMap[identifier] ?? "nil"))
+        println("")
+        println("Encoded state:")
+        println("")
+        
+        var error:NSError?
+        
+        if let archive = state.restoredObject(identifier, error: &error) {
+            println(archive.description)
+            
+            if let views = archive["kViewRestorationDataKey"]?.beautified.children where views.count > 0 {
+                
+                println("")
+                println("Restorable views:")
+                println("")
+                
+                for view in views {
+                    
+                    println(view.key)
+                    
+                    if  let data = view.value as? NSData,
+                        let archive = KeyedArchive(data: data, error: &error) {
+                            
+                            println(archive.description.indented(1))
+                            
+                    } else if let error = error {
+                        println("Could not read child archive: \(error)")
+                    }
+                }
+                
+            }
+            
+        } else if let error = error {
+            println("Could not read archive: \(error)")
+        }
+        println("")
+    }
+}
+
+extension ApplicationState: Printable {
+    
+    public var description:String {
+        var output = ""
+        logApplicationState(self, println: { output += "\($0)\n"})
+        return output
     }
 }

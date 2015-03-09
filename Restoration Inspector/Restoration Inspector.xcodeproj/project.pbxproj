@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EB00AEC91AAE1704009CAA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */; };
-		EB00AECB1AAE1704009CAA03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AECA1AAE1704009CAA03 /* ViewController.swift */; };
-		EB00AECD1AAE1704009CAA03 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AECC1AAE1704009CAA03 /* Document.swift */; };
+		EB00AECB1AAE1704009CAA03 /* ApplicationStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AECA1AAE1704009CAA03 /* ApplicationStateViewController.swift */; };
 		EB00AECF1AAE1704009CAA03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB00AECE1AAE1704009CAA03 /* Images.xcassets */; };
 		EB00AED21AAE1704009CAA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB00AED01AAE1704009CAA03 /* Main.storyboard */; };
 		EB00AEDE1AAE1704009CAA03 /* Restoration_InspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */; };
 		EB00AEE81AAE1723009CAA03 /* KeyedArchiveInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */; };
 		EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEE91AAE186C009CAA03 /* Logging.swift */; };
+		EB00AEEC1AAE3310009CAA03 /* ApplicationStateDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */; };
+		EB00AEEE1AAE39CD009CAA03 /* ApplicationStateWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,7 @@
 		EB00AEC31AAE1704009CAA03 /* Restoration Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restoration Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB00AEC71AAE1704009CAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB00AECA1AAE1704009CAA03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB00AECC1AAE1704009CAA03 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		EB00AECA1AAE1704009CAA03 /* ApplicationStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStateViewController.swift; sourceTree = "<group>"; };
 		EB00AECE1AAE1704009CAA03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB00AED11AAE1704009CAA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB00AED71AAE1704009CAA03 /* Restoration InspectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Restoration InspectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +40,8 @@
 		EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoration_InspectorTests.swift; sourceTree = "<group>"; };
 		EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeyedArchiveInspector.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Restoration_Inspector-aencbpqlomcurvgjhpyokqbzbklv/Build/Products/Debug/KeyedArchiveInspector.framework"; sourceTree = "<group>"; };
 		EB00AEE91AAE186C009CAA03 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateDocument.swift; sourceTree = "<group>"; };
+		EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */,
-				EB00AECA1AAE1704009CAA03 /* ViewController.swift */,
-				EB00AECC1AAE1704009CAA03 /* Document.swift */,
+				EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */,
+				EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */,
+				EB00AECA1AAE1704009CAA03 /* ApplicationStateViewController.swift */,
 				EB00AECE1AAE1704009CAA03 /* Images.xcassets */,
 				EB00AED01AAE1704009CAA03 /* Main.storyboard */,
 				EB00AEC61AAE1704009CAA03 /* Supporting Files */,
@@ -218,9 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB00AECB1AAE1704009CAA03 /* ViewController.swift in Sources */,
+				EB00AEEE1AAE39CD009CAA03 /* ApplicationStateWindowController.swift in Sources */,
+				EB00AECB1AAE1704009CAA03 /* ApplicationStateViewController.swift in Sources */,
 				EB00AEC91AAE1704009CAA03 /* AppDelegate.swift in Sources */,
-				EB00AECD1AAE1704009CAA03 /* Document.swift in Sources */,
+				EB00AEEC1AAE3310009CAA03 /* ApplicationStateDocument.swift in Sources */,
 				EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				EB00AEE31AAE1704009CAA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB00AEE41AAE1704009CAA03 /* Build configuration list for PBXNativeTarget "Restoration InspectorTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				EB00AEE61AAE1704009CAA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,6 +17,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func application(sender: NSApplication, openFile filename: String) -> Bool {
         
+        NSDocumentController.sharedDocumentController().openDocumentWithContentsOfURL(NSURL(fileURLWithPath: filename)!, display: true, completionHandler: { (document, wasOpen, error) -> Void in
+            return
+        })
+        
         println(filename)
         logApplicationState(filename)
         return true
