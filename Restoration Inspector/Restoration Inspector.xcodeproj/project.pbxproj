@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB00AEC91AAE1704009CAA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */; };
+		EB00AECB1AAE1704009CAA03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AECA1AAE1704009CAA03 /* ViewController.swift */; };
+		EB00AECD1AAE1704009CAA03 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AECC1AAE1704009CAA03 /* Document.swift */; };
+		EB00AECF1AAE1704009CAA03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB00AECE1AAE1704009CAA03 /* Images.xcassets */; };
+		EB00AED21AAE1704009CAA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB00AED01AAE1704009CAA03 /* Main.storyboard */; };
+		EB00AEDE1AAE1704009CAA03 /* Restoration_InspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */; };
+		EB00AEE81AAE1723009CAA03 /* KeyedArchiveInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */; };
+		EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEE91AAE186C009CAA03 /* Logging.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB00AED81AAE1704009CAA03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB00AEBB1AAE1704009CAA03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB00AEC21AAE1704009CAA03;
+			remoteInfo = "Restoration Inspector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB00AEC31AAE1704009CAA03 /* Restoration Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restoration Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB00AEC71AAE1704009CAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB00AECA1AAE1704009CAA03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB00AECC1AAE1704009CAA03 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		EB00AECE1AAE1704009CAA03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB00AED11AAE1704009CAA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB00AED71AAE1704009CAA03 /* Restoration InspectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Restoration InspectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB00AEDC1AAE1704009CAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoration_InspectorTests.swift; sourceTree = "<group>"; };
+		EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeyedArchiveInspector.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Restoration_Inspector-aencbpqlomcurvgjhpyokqbzbklv/Build/Products/Debug/KeyedArchiveInspector.framework"; sourceTree = "<group>"; };
+		EB00AEE91AAE186C009CAA03 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB00AEC01AAE1704009CAA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AEE81AAE1723009CAA03 /* KeyedArchiveInspector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AED41AAE1704009CAA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB00AEBA1AAE1704009CAA03 = {
+			isa = PBXGroup;
+			children = (
+				EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */,
+				EB00AEC51AAE1704009CAA03 /* Restoration Inspector */,
+				EB00AEDA1AAE1704009CAA03 /* Restoration InspectorTests */,
+				EB00AEC41AAE1704009CAA03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB00AEC41AAE1704009CAA03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AEC31AAE1704009CAA03 /* Restoration Inspector.app */,
+				EB00AED71AAE1704009CAA03 /* Restoration InspectorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB00AEC51AAE1704009CAA03 /* Restoration Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */,
+				EB00AECA1AAE1704009CAA03 /* ViewController.swift */,
+				EB00AECC1AAE1704009CAA03 /* Document.swift */,
+				EB00AECE1AAE1704009CAA03 /* Images.xcassets */,
+				EB00AED01AAE1704009CAA03 /* Main.storyboard */,
+				EB00AEC61AAE1704009CAA03 /* Supporting Files */,
+				EB00AEE91AAE186C009CAA03 /* Logging.swift */,
+			);
+			path = "Restoration Inspector";
+			sourceTree = "<group>";
+		};
+		EB00AEC61AAE1704009CAA03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AEC71AAE1704009CAA03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB00AEDA1AAE1704009CAA03 /* Restoration InspectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */,
+				EB00AEDB1AAE1704009CAA03 /* Supporting Files */,
+			);
+			path = "Restoration InspectorTests";
+			sourceTree = "<group>";
+		};
+		EB00AEDB1AAE1704009CAA03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AEDC1AAE1704009CAA03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB00AEC21AAE1704009CAA03 /* Restoration Inspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB00AEE11AAE1704009CAA03 /* Build configuration list for PBXNativeTarget "Restoration Inspector" */;
+			buildPhases = (
+				EB00AEBF1AAE1704009CAA03 /* Sources */,
+				EB00AEC01AAE1704009CAA03 /* Frameworks */,
+				EB00AEC11AAE1704009CAA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Restoration Inspector";
+			productName = "Restoration Inspector";
+			productReference = EB00AEC31AAE1704009CAA03 /* Restoration Inspector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB00AED61AAE1704009CAA03 /* Restoration InspectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB00AEE41AAE1704009CAA03 /* Build configuration list for PBXNativeTarget "Restoration InspectorTests" */;
+			buildPhases = (
+				EB00AED31AAE1704009CAA03 /* Sources */,
+				EB00AED41AAE1704009CAA03 /* Frameworks */,
+				EB00AED51AAE1704009CAA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB00AED91AAE1704009CAA03 /* PBXTargetDependency */,
+			);
+			name = "Restoration InspectorTests";
+			productName = "Restoration InspectorTests";
+			productReference = EB00AED71AAE1704009CAA03 /* Restoration InspectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB00AEBB1AAE1704009CAA03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Stack Exchange, Inc";
+				TargetAttributes = {
+					EB00AEC21AAE1704009CAA03 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EB00AED61AAE1704009CAA03 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EB00AEC21AAE1704009CAA03;
+					};
+				};
+			};
+			buildConfigurationList = EB00AEBE1AAE1704009CAA03 /* Build configuration list for PBXProject "Restoration Inspector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB00AEBA1AAE1704009CAA03;
+			productRefGroup = EB00AEC41AAE1704009CAA03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB00AEC21AAE1704009CAA03 /* Restoration Inspector */,
+				EB00AED61AAE1704009CAA03 /* Restoration InspectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB00AEC11AAE1704009CAA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AECF1AAE1704009CAA03 /* Images.xcassets in Resources */,
+				EB00AED21AAE1704009CAA03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AED51AAE1704009CAA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB00AEBF1AAE1704009CAA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AECB1AAE1704009CAA03 /* ViewController.swift in Sources */,
+				EB00AEC91AAE1704009CAA03 /* AppDelegate.swift in Sources */,
+				EB00AECD1AAE1704009CAA03 /* Document.swift in Sources */,
+				EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AED31AAE1704009CAA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AEDE1AAE1704009CAA03 /* Restoration_InspectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB00AED91AAE1704009CAA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB00AEC21AAE1704009CAA03 /* Restoration Inspector */;
+			targetProxy = EB00AED81AAE1704009CAA03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB00AED01AAE1704009CAA03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB00AED11AAE1704009CAA03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB00AEDF1AAE1704009CAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB00AEE01AAE1704009CAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EB00AEE21AAE1704009CAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Restoration_Inspector-aencbpqlomcurvgjhpyokqbzbklv/Build/Products/Debug",
+				);
+				INFOPLIST_FILE = "Restoration Inspector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB00AEE31AAE1704009CAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Restoration_Inspector-aencbpqlomcurvgjhpyokqbzbklv/Build/Products/Debug",
+				);
+				INFOPLIST_FILE = "Restoration Inspector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB00AEE51AAE1704009CAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Restoration InspectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Restoration Inspector.app/Contents/MacOS/Restoration Inspector";
+			};
+			name = Debug;
+		};
+		EB00AEE61AAE1704009CAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Restoration InspectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Restoration Inspector.app/Contents/MacOS/Restoration Inspector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB00AEBE1AAE1704009CAA03 /* Build configuration list for PBXProject "Restoration Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AEDF1AAE1704009CAA03 /* Debug */,
+				EB00AEE01AAE1704009CAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB00AEE11AAE1704009CAA03 /* Build configuration list for PBXNativeTarget "Restoration Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AEE21AAE1704009CAA03 /* Debug */,
+				EB00AEE31AAE1704009CAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB00AEE41AAE1704009CAA03 /* Build configuration list for PBXNativeTarget "Restoration InspectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AEE51AAE1704009CAA03 /* Debug */,
+				EB00AEE61AAE1704009CAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB00AEBB1AAE1704009CAA03 /* Project object */;
+}
