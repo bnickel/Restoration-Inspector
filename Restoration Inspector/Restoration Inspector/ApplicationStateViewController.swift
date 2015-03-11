@@ -19,7 +19,7 @@ class ApplicationStateViewController: NSViewController {
     
     weak var applicationState:ApplicationState? {
         didSet {
-            textView.string = applicationState?.description ?? ""
+            textView.string = applicationState?.description ?? "No saved state."
             textView.font = NSFont(name: "Menlo", size: 12)
         }
     }

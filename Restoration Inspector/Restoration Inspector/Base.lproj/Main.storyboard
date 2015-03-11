@@ -87,18 +87,6 @@
                                                 <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
-                                        <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
-                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="runPageLayout:" target="Ady-hI-5gd" id="Din-rz-gC5"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
-                                            <connections>
-                                                <action selector="print:" target="Ady-hI-5gd" id="qaZ-4w-aoO"/>
-                                            </connections>
-                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -106,9 +94,30 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="W48-6f-4Dl">
                                     <items>
-                                        <menuItem title="Copy" keyEquivalent="c" id="x3v-GG-iWU">
+                                        <menuItem title="Undo" keyEquivalent="z" id="Dl1-MC-fb1">
                                             <connections>
-                                                <action selector="copy:" target="Ady-hI-5gd" id="G1f-GL-Joy"/>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="1nJ-QU-2ZD"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" keyEquivalent="Z" id="Y73-79-JrK">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="RLC-oC-EJ2"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="ydf-za-wGx"/>
+                                        <menuItem title="Cut" keyEquivalent="x" id="KNL-fO-J0k">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="ddr-lS-u68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="wyf-RT-Ov4">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="Bq1-LI-U5e"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="Kvn-BH-jSs">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="D7g-Vh-6wD"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Select All" keyEquivalent="a" id="Ruw-6m-B2m">
@@ -247,14 +256,46 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="9A439C3F-FFA9-47AC-A4BD-ACF0DF5A73FA" allowsUserCustomization="NO" displayMode="labelOnly" sizeMode="regular" id="f1S-Ib-09F">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="262E6BC2-3B9E-42B3-B502-236057D948DF" label="Refresh" paletteLabel="Refresh" tag="-1" image="NSRefreshTemplate" id="acL-Fz-JQv">
+                                    <connections>
+                                        <action selector="refreshDocument:" target="jGA-0Y-lOj" id="5Dx-BF-SLz"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="64E98E40-76A7-4228-A388-FE4AE261346B" label="Auto-Refresh" paletteLabel="Auto-Refresh" tag="-1" image="NSRefreshTemplate" id="fVU-CF-jBg">
+                                    <connections>
+                                        <action selector="toggleAutorefresh:" target="jGA-0Y-lOj" id="2ey-WL-ZOs"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="9EF688FF-45DE-41EC-AF93-1C4F593C49F7" label="Remove Saved State" paletteLabel="Clear Saved State" tag="-1" image="NSTrashFull" id="RH6-FR-em9">
+                                    <connections>
+                                        <action selector="clearSavedState:" target="jGA-0Y-lOj" id="YLC-NB-b80"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="uI2-hs-GGk"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="PVd-N7-5Mw"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="acL-Fz-JQv"/>
+                                <toolbarItem reference="fVU-CF-jBg"/>
+                                <toolbarItem reference="PVd-N7-5Mw"/>
+                                <toolbarItem reference="RH6-FR-em9"/>
+                            </defaultToolbarItems>
+                            <connections>
+                                <outlet property="delegate" destination="jGA-0Y-lOj" id="nwy-xY-lbf"/>
+                            </connections>
+                        </toolbar>
                     </window>
                     <connections>
+                        <outlet property="autorefreshItem" destination="fVU-CF-jBg" id="Z6p-8x-cZ3"/>
+                        <outlet property="toolbar" destination="f1S-Ib-09F" id="2JC-g7-11H"/>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
                     </connections>
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="292"/>
         </scene>
         <!--Application State View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -317,4 +358,8 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+        <image name="NSTrashFull" width="32" height="32"/>
+    </resources>
 </document>
