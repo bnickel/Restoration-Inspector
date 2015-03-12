@@ -16,6 +16,8 @@
 		EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEE91AAE186C009CAA03 /* Logging.swift */; };
 		EB00AEEC1AAE3310009CAA03 /* ApplicationStateDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */; };
 		EB00AEEE1AAE39CD009CAA03 /* ApplicationStateWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */; };
+		EB59AFDD1AB202CD0030B4C5 /* Simulators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59AFDC1AB202CD0030B4C5 /* Simulators.swift */; };
+		EB59AFDF1AB209940030B4C5 /* AllSavedStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59AFDE1AB209940030B4C5 /* AllSavedStatesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		EB00AEE91AAE186C009CAA03 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateDocument.swift; sourceTree = "<group>"; };
 		EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateWindowController.swift; sourceTree = "<group>"; };
+		EB59AFDC1AB202CD0030B4C5 /* Simulators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulators.swift; sourceTree = "<group>"; };
+		EB59AFDE1AB209940030B4C5 /* AllSavedStatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllSavedStatesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				EB00AEC81AAE1704009CAA03 /* AppDelegate.swift */,
+				EB59AFDC1AB202CD0030B4C5 /* Simulators.swift */,
 				EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */,
 				EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */,
 				EB00AECA1AAE1704009CAA03 /* ApplicationStateViewController.swift */,
 				EB00AECE1AAE1704009CAA03 /* Images.xcassets */,
 				EB00AED01AAE1704009CAA03 /* Main.storyboard */,
+				EB59AFDE1AB209940030B4C5 /* AllSavedStatesViewController.swift */,
 				EB00AEC61AAE1704009CAA03 /* Supporting Files */,
 				EB00AEE91AAE186C009CAA03 /* Logging.swift */,
 			);
@@ -222,7 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB00AEEE1AAE39CD009CAA03 /* ApplicationStateWindowController.swift in Sources */,
+				EB59AFDF1AB209940030B4C5 /* AllSavedStatesViewController.swift in Sources */,
 				EB00AECB1AAE1704009CAA03 /* ApplicationStateViewController.swift in Sources */,
+				EB59AFDD1AB202CD0030B4C5 /* Simulators.swift in Sources */,
 				EB00AEC91AAE1704009CAA03 /* AppDelegate.swift in Sources */,
 				EB00AEEC1AAE3310009CAA03 /* ApplicationStateDocument.swift in Sources */,
 				EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */,
