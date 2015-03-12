@@ -12,8 +12,10 @@ class ApplicationStateWindowController: NSWindowController, NSToolbarDelegate {
 
     override var document: AnyObject? {
         didSet {
-            documentDidRefresh()
-            documentDidChangeAutorefresh()
+            if document != nil {
+                documentDidRefresh()
+                documentDidChangeAutorefresh()
+            }
         }
     }
     
