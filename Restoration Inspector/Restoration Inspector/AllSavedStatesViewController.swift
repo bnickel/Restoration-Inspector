@@ -12,6 +12,8 @@ class AllSavedStatesViewController: NSViewController, NSOutlineViewDataSource, N
     
     @IBOutlet weak var outlineView: NSOutlineView!
     
+    private var selectingFromNotification = false
+    
     private var simulators:[iOSSimulator] = [] {
         didSet {
             outlineView.reloadData()
@@ -20,6 +22,10 @@ class AllSavedStatesViewController: NSViewController, NSOutlineViewDataSource, N
     
     override func viewDidLoad() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "selectItemFromNotification:", name: NSWindowDidBecomeKeyNotification, object: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     override func viewWillAppear() {
@@ -65,7 +71,7 @@ class AllSavedStatesViewController: NSViewController, NSOutlineViewDataSource, N
     }
     
     func outlineViewSelectionDidChange(notification: NSNotification) {
-        if outlineView.selectedRow != -1 {
+        if outlineView.selectedRow != -1 && !selectingFromNotification {
             
             if let URL = outlineView.itemAtRow(outlineView.selectedRow) as? NSURL {
                 NSDocumentController.sharedDocumentController().openDocumentWithContentsOfURL(URL, display: true, completionHandler: { (document, wasOpen, error) -> Void in
@@ -91,9 +97,11 @@ class AllSavedStatesViewController: NSViewController, NSOutlineViewDataSource, N
         
         let URL = (documentController.currentDocument as? NSDocument)?.fileURL
         
+        selectingFromNotification = true
         if !outlineView.selectItem(exactURL(URL)) {
             outlineView.deselectAll(self)
         }
+        selectingFromNotification = false
     }
 }
 
