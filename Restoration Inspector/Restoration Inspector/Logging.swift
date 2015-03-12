@@ -34,14 +34,24 @@ extension BeautifiedKeyedArchiveRecord : Printable {
             return "\(key) (\(valueType)) = \(data.length) bytes"
             
         } else {
-            return "\(key) (\(valueType)) = \(value)" + (children.count > 0 ? "\n" + "\n".join(children.map({ $0.description })).indented(1) : "")
+            
+            // let childText = children.count > 0 ? "\n" + "\n".join(children.map({ $0.description })).indented(1) : "" // I can't even.
+            
+            let childText = NSMutableString()
+            for child in children {
+                childText.appendString("\n")
+                childText.appendString(child.description.indented(1))
+            }
+            
+            return "\(key) (\(valueType)) = \(value)" + String(childText)
         }
     }
 }
 
 extension KeyedArchive : Printable {
     public var description:String {
-        return join("\n", sorted(map(keys) { self[$0]!.beautified.description }))
+        // return join("\n", sorted(map(keys) { self[$0]!.beautified.description })) // LOL!
+        return (sorted(map(keys) { self[$0]!.beautified.description }) as NSArray).componentsJoinedByString("\n")
     }
 }
 
