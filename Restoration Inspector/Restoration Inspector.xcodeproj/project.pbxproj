@@ -12,12 +12,13 @@
 		EB00AECF1AAE1704009CAA03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB00AECE1AAE1704009CAA03 /* Images.xcassets */; };
 		EB00AED21AAE1704009CAA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB00AED01AAE1704009CAA03 /* Main.storyboard */; };
 		EB00AEDE1AAE1704009CAA03 /* Restoration_InspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */; };
-		EB00AEE81AAE1723009CAA03 /* KeyedArchiveInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */; };
 		EB00AEEA1AAE186C009CAA03 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEE91AAE186C009CAA03 /* Logging.swift */; };
 		EB00AEEC1AAE3310009CAA03 /* ApplicationStateDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */; };
 		EB00AEEE1AAE39CD009CAA03 /* ApplicationStateWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */; };
 		EB59AFDD1AB202CD0030B4C5 /* Simulators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59AFDC1AB202CD0030B4C5 /* Simulators.swift */; };
 		EB59AFDF1AB209940030B4C5 /* AllSavedStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59AFDE1AB209940030B4C5 /* AllSavedStatesViewController.swift */; };
+		EB59AFE41AB249A00030B4C5 /* KeyedArchiveInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB59AFE31AB249A00030B4C5 /* KeyedArchiveInspector.framework */; };
+		EB59AFE51AB249A00030B4C5 /* KeyedArchiveInspector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB59AFE31AB249A00030B4C5 /* KeyedArchiveInspector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EB59AFE61AB249A10030B4C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB59AFE51AB249A00030B4C5 /* KeyedArchiveInspector.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EB00AEC31AAE1704009CAA03 /* Restoration Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restoration Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB00AEC71AAE1704009CAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,12 +55,12 @@
 		EB00AED71AAE1704009CAA03 /* Restoration InspectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Restoration InspectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB00AEDC1AAE1704009CAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB00AEDD1AAE1704009CAA03 /* Restoration_InspectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoration_InspectorTests.swift; sourceTree = "<group>"; };
-		EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeyedArchiveInspector.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Restoration_Inspector-aencbpqlomcurvgjhpyokqbzbklv/Build/Products/Debug/KeyedArchiveInspector.framework"; sourceTree = "<group>"; };
 		EB00AEE91AAE186C009CAA03 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		EB00AEEB1AAE3310009CAA03 /* ApplicationStateDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateDocument.swift; sourceTree = "<group>"; };
 		EB00AEED1AAE39CD009CAA03 /* ApplicationStateWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateWindowController.swift; sourceTree = "<group>"; };
 		EB59AFDC1AB202CD0030B4C5 /* Simulators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulators.swift; sourceTree = "<group>"; };
 		EB59AFDE1AB209940030B4C5 /* AllSavedStatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllSavedStatesViewController.swift; sourceTree = "<group>"; };
+		EB59AFE31AB249A00030B4C5 /* KeyedArchiveInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = KeyedArchiveInspector.framework; path = "/Users/bnickel/Library/Developer/Xcode/DerivedData/Restoration_Inspector-aencbpqlomcurvgjhpyokqbzbklv/Build/Products/Debug/KeyedArchiveInspector.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB00AEE81AAE1723009CAA03 /* KeyedArchiveInspector.framework in Frameworks */,
+				EB59AFE41AB249A00030B4C5 /* KeyedArchiveInspector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +85,7 @@
 		EB00AEBA1AAE1704009CAA03 = {
 			isa = PBXGroup;
 			children = (
-				EB00AEE71AAE1723009CAA03 /* KeyedArchiveInspector.framework */,
+				EB59AFE31AB249A00030B4C5 /* KeyedArchiveInspector.framework */,
 				EB00AEC51AAE1704009CAA03 /* Restoration Inspector */,
 				EB00AEDA1AAE1704009CAA03 /* Restoration InspectorTests */,
 				EB00AEC41AAE1704009CAA03 /* Products */,
@@ -138,6 +153,7 @@
 				EB00AEBF1AAE1704009CAA03 /* Sources */,
 				EB00AEC01AAE1704009CAA03 /* Frameworks */,
 				EB00AEC11AAE1704009CAA03 /* Resources */,
+				EB59AFE61AB249A10030B4C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
